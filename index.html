@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecowiser Assesment</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h2>Tuks</h2>
+        </div>
+        <div class="menu">
+          <h3>MENU</h3>
+          <ul>
+            <li>
+              <a href="#" data-section="dashboard"><i class="icon">📊</i> Dashboard</a>
+            </li>
+            <li>
+              <a href="#" data-section="products"><i class="icon">📦</i> Products</a>
+            </li>
+            <li>
+              <a href="#" data-section="customers"><i class="icon">👥</i> Customers</a>
+            </li>
+            <li>
+              <a href="#" data-section="categories"><i class="icon">📁</i> Categories</a>
+            </li>
+            <li>
+              <a href="#" data-section="orders"><i class="icon">🛍️</i> Orders</a>
+            </li>
+            <li>
+              <a href="#" data-section="coupons"><i class="icon">🎫</i> Coupons</a>
+            </li>
+            <li>
+              <a href="#" data-section="chats"><i class="icon">💬</i> Chats</a>
+            </li>
+          </ul>
+        </div>
+        <div class="other">
+          <h3>OTHER</h3>
+          <ul>
+            <li>
+              <a href="#" data-section="settings"><i class="icon">⚙️</i> Settings</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header>
+          <div class="search-bar">
+            <input type="text" placeholder="Search something here" />
+          </div>
+          <div class="user-profile">
+            <div class="cart">🛒<span class="cart-count">0</span></div>
+            <div class="avatar">👤</div>
+          </div>
+        </header>
+
+        <section id="dashboard" class="section"></section>
+        <section id="products" class="section">
+          <div class="products-header">
+            <h1>Products</h1>
+            <button class="add-button">Add Product</button>
+          </div>
+          <div class="table-container">
+            <div class="search-product">
+              <input type="text" placeholder="Search in product" />
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th><input type="checkbox" /></th>
+                  <th>Product</th>
+                  <th>Category</th>
+                  <th>Stock</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody id="productsTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="customers" class="section"></section>
+
+        <section id="categories" class="section"></section>
+
+        <section id="orders" class="section"></section>
+
+        <section id="coupons" class="section"></section>
+
+        <section id="chats" class="section"></section>
+
+        <section id="settings" class="section"></section>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
